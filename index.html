@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game , rock ,paper or scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>Rock,Paper or scissors</h1>
+        <p>Select your play and beat the CPU</p>
+    </header>
+    <main> 
+        <p class="instruccions" id="instruccions">
+         The First to reach 5 points wins
+        </p>
+        <div class="score">
+            <p class="name name-player">PLAYER</p>
+            <P class="name name-cpu">CPU</P>
+            <p class="points"> 
+                <span id="points-user"> 0</span>
+                <span>-</span>
+                <span id="points-cpu">0</span>
+            </p>
+        </div>
+        <div class="choise-weapon" id="choise-weapon">
+            <h2> Choise your weapon for the next turn</h2>
+            <div class="weapons"> 
+                <button class="weapon" id="rock🪨">🪨</button>
+                <button class="weapon" id="paper📝">📝</button>
+                <button class="weapon" id="scissors✂️">✂️</button>
+            </div>
+        </div>
+        <div class="message disabled" id="msg">
+            <p> 
+                You chose <span class="choise" id="choise-user"> paper📝 </span><br>
+                and the cpu chose <span class="choise" id="choise-cpu">rock🪨</span>
+            </p>
+            <p id="win-point">Your Win a point 🔥</p>
+        </div>
+        <button class="btn disabled" id="restart"> Restart the Game</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
